@@ -11,6 +11,9 @@ param([string]$outputFileName="replaceThisName") #Must be the first statement in
 
 $mydocuments = [environment]::getfolderpath("mydocuments")
 
+# create the structure file if it doesn't exist
+Get-ChildItem -Path .\chapters\* -Filter *.md -Recurse | % { $_.FullName } > .\structure\documentStructure_windows.txt
+ 
 # list the structure of your dissertation from the form.md list created earlier
 $list=get-content -path "structure\documentStructure_windows.txt"
 
