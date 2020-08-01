@@ -1,4 +1,4 @@
-chapters/documentHeader.md
-chapters/README.md
-chapters/someExamples.md
-chapters/references.md
+chapters/_documentHeader.md
+chapters/01_README.md
+chapters/02_someExamples.md
+chapters/999_references.md
