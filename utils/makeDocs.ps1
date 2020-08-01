@@ -1,4 +1,4 @@
-﻿
+
 # massive thanks to Rob Parker for help with this powershell script
 # cd into your root working directory, then open powershell in admin mode and run utils\makeDocs.ps1
 # the command will look like this powershell.exe .\utils\makeDocs.ps1 myDissertationName
@@ -13,7 +13,7 @@ $mydocuments = [environment]::getfolderpath("mydocuments")
 
 # create the structure file if it doesn't exist
 Get-ChildItem -Path .\chapters\* -Filter *.md -Recurse | % { $_.FullName } > .\structure\documentStructure_windows.txt
- 
+
 # list the structure of your dissertation from the form.md list created earlier
 $list=get-content -path "structure\documentStructure_windows.txt"
 
@@ -22,7 +22,7 @@ $listString=[string]$list
 
 # setup the pandoc commands:
 $commandHTML="pandoc $($listString) -s --mathjax --toc --toc-depth 2 --filter pandoc-citeproc  -o $($outputFileName).html"
-$commandPDF="pandoc styling\pdfStyle.yaml $($listString) --mathjax --filter pandoc-citeproc --pdf-engine=xelatex -s --toc --toc-depth 2 -o $($outputFileName).pdf"
+$commandPDF="pandoc styling\pdfStyle.yaml $($listString) --lua-filter utils\linkFlat.lua --mathjax --filter pandoc-citeproc --pdf-engine=xelatex -s --toc --toc-depth 2 -o $($outputFileName).pdf"
 $commandWORD="pandoc $($listString) -s --mathjax --toc --toc-depth 2 --filter pandoc-citeproc  -o $($outputFileName).docx"
 $commandEPUB="pandoc $($listString) -s --mathjax --toc --toc-depth 2 --filter pandoc-citeproc  -o $($outputFileName).epub"
 
