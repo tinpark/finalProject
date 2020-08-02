@@ -4,3 +4,10 @@ pandoc documentHeader.md README.md someExamples.md references.md -s --katex --se
 
 # Make HTML with simple sidebar
 pandoc \chapters\documentHeader.md \chapters\README.md \chapters\someExamples.md \chapters\references.md -s --mathjax --toc --filter pandoc-citeproc -o test2.html
+
+
+# sox render a png example
+
+This takes 15 seconds of the sound and renders out a spectrogram focusing on the first 6k of frequencies. Note the labels you can add in `""` below.
+
+`sox sounds/asound.wav -n rate 12k trim 10 15 spectrogram -h -m -p 3 -z 120 -y 300 -t "a sound from my hydrasynth" -c "asound" -o sounds/asound.png`
