@@ -12,7 +12,7 @@
 - [Pandoc](http://www.pandoc.org) `brew install pandoc` (typed on the terminal)
 - [Pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) `brew install pandoc-citeproc` (typed on the terminal)
 
-If you intend to style things in MS word and make a PDF from that, you can stop here. However, if you want to make lovely proper PDF files, you'll also need LaTeX, well worth it IMO:
+If you intend to style things in `MS word` and make a `PDF` from that, you can stop here. However, if you want to make lovely proper PDF files, you'll also need LaTeX, well worth it IMO:
 
 - [Latex](https://www.latex-project.org/get/) warning , you need 2gb at least for the full install of [MacTex](https://www.tug.org/mactex/), you’ll be glad you have it eventually.
 
@@ -25,15 +25,15 @@ If you intend to style things in MS word and make a PDF from that, you can stop 
     - [autocomplete-bibtex](https://atom.io/packages/autocomplete-bibtex)
 - [Chocolatey](https://chocolatey.org/), you don’t have to have this, but it makes installing packages very easy.
 - [Pandoc](http://www.pandoc.org) `choco install pandoc`
-- [Pandoc-citeproc](https://github.com/jgm/pandoc-citeproc)  not tried, but you need this to process citations I think…
+- Pandoc citeproc comes with the choco version of `pandoc`
 
-If you intend to style things in MS word and make a PDF from that, you can stop here. However, if you want to make lovely proper PDF files, you'll also need LaTeX, well worth it IMO:
+If you intend to style things in `MS word` and make a `PDF` from that, you can stop here. However, if you want to make lovely proper PDF files, you'll also need `LaTeX`, well worth it IMO:
 
 - [Latex](https://www.latex-project.org/get/) warning , you need 2gb at least for the full [install](https://www.latex-tutorial.com/installation/#Windows).
 
 ## Next, clone the template repository to your hard drive
 - `cd ~/Documents`
-- `git clone https://github.com/tinpark/finalProjectTemplate`
+- `git clone https://github.com/tinpark/finalProject`
 
 ### what's inside this template?
 When you've cloned this package, you'll see a lot of folders. Some are empty, waiting for your content, others are pre-populated with tools and style stuff that should be useful to you.

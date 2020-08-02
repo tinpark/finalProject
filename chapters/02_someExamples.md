@@ -107,8 +107,8 @@ Use these sparingly[^FN] this is because you don't want your reader getting too 
 
 These are easily embedded in the same way as images and work perfectly in `pandoc` HTML export. However, you can't embed the videos and sounds into a PDF very easily so it's better to put a link to the files in as well.
 
-![a sound - something from my hydrasynth](_sounds/asound.wav)
-[link to the sound file](_sounds/asound.wav)
+![a sound - something from my hydrasynth, find the *asound.wav* inside the [*sounds* directory](sounds)](sounds/asound.wav)
 
-![a film - really old from 2011](_videos/avideo.mov)
-[link to the video file](_videos/avideo.mov)
+
+![a film - really old from 2011](videos/avideo.mov)
+[link to the video file](videos/avideo.mov)
