@@ -112,3 +112,21 @@ These are easily embedded in the same way as images and work perfectly in `pando
 
 ![a film - really old from 2011](videos/avideo.mov)
 [link to the video file](videos/avideo.mov)
+
+### A good way to deal with media files in general
+
+You'll often be wanting to render out a `.pdf` and/or `.html` file. In a PDF, you can't embed the media, and it may be informative to have a waveform or spectrogram of the sound to refer to, as well as a link to the file itself.
+
+Get yourself an image of the soundfile and include it when you link to your soundfile:
+
+I made a spectrogram of the soundfile `sounds/asound.wav` by using `sox`:
+
+`sox sounds/asound.wav -n rate 12k trim 10 15 spectrogram -h -m -p 3 -z 120 -y 300 -t "a sound from my hydrasynth" -c "asound" -o sounds/asound.png`
+
+I can then embed the sound file image into the document:
+
+![spectrogram of the sound file which is located here: [sounds/asound.wav](sounds/asound.wav)](sounds/asound.png)
+
+Markdown to make that image show up looks like this here:
+
+`![spectrogram of the sound file which is located here: [sounds/asound.wav](sounds/asound.wav)](sounds/asound.png)`

@@ -23,8 +23,12 @@ fi
 # Make some HTML
 pandoc `cat structure/documentStructure_OSX.md` --filter pandoc-citeproc --toc --toc-depth 2 -s --mathjax -f markdown -t html5 -o $outputName.html
 
+open $outputName.html
+
 # Make a PDF
 pandoc styling/pdfStyle.yaml `cat structure/documentStructure_OSX.md` --lua-filter utils/linkFlat.lua --mathjax --quiet --toc --toc-depth 2 --filter pandoc-citeproc --standalone --pdf-engine=xelatex -o $outputName.pdf
+
+open $outputName.pdf
 
 # Make an ebook
 pandoc `cat structure/documentStructure_OSX.md`  --toc --toc-depth 2 --filter pandoc-citeproc -s --mathjax -o $outputName.epub
