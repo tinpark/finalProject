@@ -8,11 +8,10 @@
 param([string]$outputFileName="replaceThisName") #Must be the first statement in your script
 
 # get the envrionment paths for your home folder - TODO, this isn't complete but ultimately you should be able to run this script from anywhere, perhaps simply specifying the path to the form.md document as an argument
-
 $mydocuments = [environment]::getfolderpath("mydocuments")
 
 # create the structure file if it doesn't exist
-Get-ChildItem -Path .\chapters\* -Filter *.md -Recurse | % { $_.FullName } > .\structure\documentStructure_windows.txt
+Get-ChildItem -Path .\chapters\* -Filter *.md -Recurse | % { $_.FullName } | Out-File -FilePath .\structure\documentStructure_windows.txt
 
 # list the structure of your dissertation from the form.md list created earlier
 $list=get-content -path "structure\documentStructure_windows.txt"

@@ -21,6 +21,11 @@ html {
   overflow:auto;
 }
 
+video {
+  /* override other styles to make  addition by Martin Parker*/
+  width: 100%    !important;
+  height: auto   !important;
+}
 
 body {
   color: #444;

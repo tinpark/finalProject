@@ -113,6 +113,10 @@ These are easily embedded in the same way as images and work perfectly in `pando
 ![a film - really old from 2011](videos/avideo.mov)
 [link to the video file](videos/avideo.mov)
 
+
+![a very wide video test for the CSS](videos/wideVid.mov)
+
+
 ### A good way to deal with media files in general
 
 You'll often be wanting to render out a `.pdf` and/or `.html` file. In a PDF, you can't embed the media, and it may be informative to have a waveform or spectrogram of the sound to refer to, as well as a link to the file itself.
