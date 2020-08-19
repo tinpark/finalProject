@@ -1,14 +1,12 @@
 #!/bin/sh
 #
 #  makeDocs.sh
-
 #  Created by PARKER Martin on 08/05/2019.
 #   This is a script to quickly make 4 different output files with pandoc from a range of .md files.
 ############# usage ##############
 # cd directory/with/yourFinalProjectFiles/
 # bash utils/makeDocs.sh outputFileName
 # this will make you .html, .pdf, .docx & an ebook in epub format called outputfileName, change this argument for whatever file name you like.
-
 outputName=$1
 if [ ! -d "structure" ]
   then
