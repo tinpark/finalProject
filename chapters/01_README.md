@@ -48,7 +48,7 @@ Have a look at the bottom of that `styling/pdfStyle.yaml` document. You'll see t
 
 `  \fancyfoot[R]{\href{http://tinpark.com}{tinpark.com}}`
 
-The other folder with something interesting inside is called `utils`. Here you'll find a bash script that, when you run it in the terminal will automatically make `.docx`, `.epub`, `.html` and `.pdf` files. It will also automatically open the `.pdf` and `.html` file if rendering them off was a success. See [this section](#next).
+The other folder with something interesting inside is called `utils`. Here you'll find a bash script that, when you run it in the terminal will automatically make `.docx`, `.epub`, `.html` and `.pdf` files. It will also automatically open the `.pdf` and `.html` file if rendering them off was a success. See [this section](#nextSec).
 
 
 ### what else do you need?
@@ -57,7 +57,7 @@ These will conventionally be the first and last documents in your `docStructure.
 
 You also need a `.bib` file where you'll store all of your citations using `Zotero`. You'll need to know where this is located and point your `documentHeader.md` file to that bib. You can keep the `.bib` file in the `bibliography` folder provided, or keep it elsewhere. Give `documentHeader.md` the full file path to the bibliography.
 
-## Next{#next}
+## Next {#nextSec}
 When you have edited the `documentHeader.md`, especially making sure to set a working path a proper .bib file, you could have a go at running the `utils/makeDocs.sh` script. If things work properly, you'll get 4 files, two of which will open automatically, the `.pdf`
  and the `.html`.
 
