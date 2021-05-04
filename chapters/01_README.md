@@ -10,7 +10,7 @@
     - [autocomplete-bibtex](https://atom.io/packages/autocomplete-bibtex)
 - [Homebrew](https://brew.sh/)(needs the command line so open the terminal up, go on, you don’t have to have this, but it makes installing packages very easy)
 - [Pandoc](http://www.pandoc.org) `brew install pandoc` (typed on the terminal)
-- [Pandoc-citeproc](https://github.com/jgm/pandoc-citeproc) `brew install pandoc-citeproc` (typed on the terminal)
+
 
 If you intend to style things in `MS word` and make a `PDF` from that, you can stop here. However, if you want to make lovely proper PDF files, you'll also need LaTeX, well worth it IMO:
 
@@ -25,7 +25,7 @@ If you intend to style things in `MS word` and make a `PDF` from that, you can s
     - [autocomplete-bibtex](https://atom.io/packages/autocomplete-bibtex)
 - [Chocolatey](https://chocolatey.org/), you don’t have to have this, but it makes installing packages very easy.
 - [Pandoc](http://www.pandoc.org) `choco install pandoc`
-- Pandoc citeproc comes with the choco version of `pandoc`
+
 
 If you intend to style things in `MS word` and make a `PDF` from that, you can stop here. However, if you want to make lovely proper PDF files, you'll also need `LaTeX`, well worth it IMO:
 
