@@ -20,14 +20,14 @@ $list=get-content -path "structure\documentStructure_windows.txt"
 $listString=[string]$list
 
 # setup the pandoc commands:
-$commandHTML="pandoc $($listString) -s --mathjax --toc --toc-depth 2 --filter pandoc-citeproc  -o $($outputFileName).html"
-$commandPDF="pandoc styling\pdfStyle.yaml $($listString) --lua-filter utils\linkFlat.lua --mathjax --filter pandoc-citeproc --pdf-engine=xelatex -s --toc --toc-depth 2 -o $($outputFileName).pdf"
-$commandWORD="pandoc $($listString) -s --mathjax --toc --toc-depth 2 --filter pandoc-citeproc  -o $($outputFileName).docx"
-$commandEPUB="pandoc $($listString) -s --mathjax --toc --toc-depth 2 --filter pandoc-citeproc  -o $($outputFileName).epub"
+$commandHTML="pandoc $($listString) -s --mathjax --toc --toc-depth 2 --citeproc  -o $($outputFileName).html"
+$commandPDF="pandoc styling\pdfStyle.yaml $($listString) --lua-filter utils\linkFlat.lua --mathjax --citeproc --pdf-engine=xelatex -s --toc --toc-depth 2 -o $($outputFileName).pdf"
+$commandWORD="pandoc $($listString) -s --mathjax --toc --toc-depth 2 --citeproc  -o $($outputFileName).docx"
+$commandEPUB="pandoc $($listString) -s --mathjax --toc --toc-depth 2 --citeproc  -o $($outputFileName).epub"
 
 # if you want to style things in inDesign later, you can export to ICML
 
-$commandICML="pandoc $($listString) -s --mathjax --toc --toc-depth 2 --filter pandoc-citeproc  -o $($outputFileName).icml"
+$commandICML="pandoc $($listString) -s --mathjax --toc --toc-depth 2 --citeproc  -o $($outputFileName).icml"
 
 # run the commands with Invoke-Expression, uncomment the files you want to render out
 Invoke-Expression -Command $commandHTML
