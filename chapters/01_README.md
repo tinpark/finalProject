@@ -57,7 +57,7 @@ These will conventionally be the first and last documents in your `docStructure.
 
 You also need a `.bib` file where you'll store all of your citations using `Zotero`. You'll need to know where this is located and point your `documentHeader.md` file to that bib. You can keep the `.bib` file in the `bibliography` folder provided, or keep it elsewhere. Give `documentHeader.md` the full file path to the bibliography.
 
-## Next {#next}
+## Next{#next}
 When you have edited the `documentHeader.md`, especially making sure to set a working path a proper .bib file, you could have a go at running the `utils/makeDocs.sh` script. If things work properly, you'll get 4 files, two of which will open automatically, the `.pdf`
  and the `.html`.
 
